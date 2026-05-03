@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>Hacker Terminal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="terminal"></div>
+<div id="final">⚠ شما هک شدید ⚠</div>
+
+<script>
+const lines = [
+"> Initializing system...",
+"> Connecting to network...",
+"> Scanning ports...",
+"> Firewall detected...",
+"> Bypassing security...",
+"> Injecting payload...",
+"> Access granted...",
+"> Extracting data...",
+"> Encrypting files...",
+"> SYSTEM COMPROMISED"
+];
+
+let i = 0;
+let text = "";
+
+function type() {
+  if (i < lines.length) {
+    text += lines[i] + "\n";
+    document.getElementById("terminal").innerText = text;
+    i++;
+    setTimeout(type, 120); // fast effect
+  } else {
+    setTimeout(showFinal, 600);
+  }
+}
+
+function showFinal() {
+  document.getElementById("terminal").style.display = "none";
+  document.getElementById("final").style.display = "flex";
+}
+
+window.onload = type;
+</script>
+
+</body>
+</html>
