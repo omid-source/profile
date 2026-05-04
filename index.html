@@ -43,16 +43,6 @@ const lines = [
 "> Access granted...",
 "> Extracting data...",
 "> Encrypting files...",
-"> SYSTEM COMPROMISED",
-"> Initializing system...",
-"> Connecting to network...",
-"> Scanning ports...",
-"> Firewall detected...",
-"> Bypassing security...",
-"> Injecting payload...",
-"> Access granted...",
-"> Extracting data...",
-"> Encrypting files...",
 "> SYSTEM COMPROMISED"
 
 ];
@@ -65,7 +55,7 @@ function type() {
     text += lines[i] + "\n";
     document.getElementById("terminal").innerText = text;
     i++;
-    setTimeout(type, 120); // fast effect
+    setTimeout(type, 50); // fast effect
   } else {
     setTimeout(showFinal, 600);
   }
