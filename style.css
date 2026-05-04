@@ -22,14 +22,16 @@ body {
   align-items: center;
   background: black;
   color: red;
+  direction: rtl;
   text-align: center;
   animation: glitch 0.15s infinite;
+  padding: 20px;
 }
 
 .main-text {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
-  text-shadow: 0 0 25px red, 0 0 50px red;
+  text-shadow: 0 0 20px red, 0 0 50px red;
 }
 
 .line {
